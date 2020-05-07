@@ -14,9 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("log")
+@LogAnnotation("查询用户id")
 public class LogServiceImpl {
 
-    @LogAnnotation("查询用户id")
+
     @RequestMapping("getUserId")
     public String getUserId(String id){
 

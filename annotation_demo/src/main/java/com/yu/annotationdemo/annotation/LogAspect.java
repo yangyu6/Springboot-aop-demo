@@ -23,7 +23,7 @@ public class LogAspect {
 
 
     // 切入点
-    @Pointcut("@annotation(com.yu.annotationdemo.annotation.LogAnnotation)")
+    @Pointcut("@within(com.yu.annotationdemo.annotation.LogAnnotation)||@annotation(com.yu.annotationdemo.annotation.LogAnnotation)")
     public void logAnnotationPointcut() {
     }
 
